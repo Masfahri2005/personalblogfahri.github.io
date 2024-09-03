@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog Fakhrizal</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>MY PERSONAL BLOG</h1>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">MY SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SECTION ABOUT ME -->
+    <section class="about" id="about">
+        <div class="container">
+            <h3>ABOUT ME</h3>
+            <div class="about-content">
+                <img src="img/foto_profile.png" alt="Profile Photo">
+                <p>Hello, I am Muhammad Fakhrizal Garnindyo! Welcome to my personal blog, where I share my experiences, knowledge, and latest projects in the world of web development and technology. <strong>I am always eager to learn new things and challenge myself with various web development projects.</strong> Thank you for visiting!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MY SKILLS -->
+    <section class="service" id="service">
+        <div class="container">
+            <h3>MY SKILLS</h3>
+            <div class="box">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML 5</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-js-square"></i></div>
+                        <h4>JAVASCRIPT</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>RESPONSIVE WEB DESIGN</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-php"></i></div>
+                        <h4>PHP NATIVE</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-laravel"></i></div>
+                        <h4>LARAVEL FRAMEWORK</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-react"></i></div>
+                        <h4>REACT JS</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fab fa-python"></i></div>
+                        <h4>PYTHON</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3>CONTACT ME</h3>
+            <p>If you have any questions or would like to collaborate on a project, feel free to reach out through my social media channels or via email. I’d love to hear from you!</p>
+            <ul>
+                <li><a href="https://www.instagram.com/xytz.mz/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/6282123439604" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="www.linkedin.com/in/fakhrizal-garnindyo-748398290"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:fakhrizalgarnindyo@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/Masfahri2005/" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--  BUKA Footer -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Muhammad Fakhrizal. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".bg-loader").hide();
+            
+            // membuat transisi halaman saat mengklik tautan navigasi menjadi lebih halus dan tidak abrupt.
+            $("a[href^='#']").on('click', function(event) {
+                event.preventDefault();
+                
+                var target = $(this).attr("href");
+                $("html, body").animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+            });
+            
+            // Notifikasi pesan masuk
+            alert("Welcome to my personal blog!");
+        });
+    </script>
+</body>
+
+</html>
